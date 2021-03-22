@@ -1,0 +1,331 @@
+@import 'mixin';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$margin-left:111px;
+$margin-right:102px;
+$bg-color: #ededed;
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/IMG/section_hero.png');
+    background-size: cover;
+    // Thanh logo+menu
+    &-nav{
+        padding-top: 93px;
+        display: flex;
+        justify-content: space-between;
+        &-icon{
+            margin-left: $margin-left;
+        }
+    }
+    &-menu{
+        margin-right: $margin-right;
+        ul li{
+            display: inline-block;
+        } 
+        a{
+            text-decoration: none;
+            @include montserrat(normal, 20px,uppercase,normal,normal);
+            margin-left: 30px;
+        }
+    }
+    // Gioi thieu trang web
+    &-content{
+        display: flex;
+        flex-direction: column;
+        margin-left: $margin-left;
+        margin-top: 150px;
+        &_tech{
+            @include montserrat(bolder,60px,uppercase,0.98,normal);
+        }
+        &_build{
+            @include montserrat(normal,24px,none,1.13,normal);
+        }
+        &_good{
+            span{
+                font-weight: bold;
+            }
+            @extend .header-content_build;
+            margin-top:25px;
+        }
+        &-email{
+            margin-top: 25px;
+            display: flex;
+            &_text input{
+                @include montserrat(normal,14px,none,1.79,0.14px);
+                color: #383838;
+                background-color: $bg-color;
+                width: 270px;
+                height: 39px;
+                outline: none;
+                opacity: 0.5;
+                border-radius: 4px;
+                border: none;
+                padding-left: 10px;
+                box-shadow:0 2px 0 0 #bebebe;
+            }
+            &_button{
+                button{
+                    @include montserrat(normal, 16px,none,1.56,0.16px);
+                    background-color: #f7564b;
+                    margin-left: 10px;
+                    width: 200px;
+                    height: 39px;
+                    border-radius: 4px;
+                    outline: none;
+                    border:none;
+                    box-shadow: 0 2px 0 0 #d0493f;
+                    &:hover{
+                        background-color: #fff8dc;
+                        color: black;
+                        box-shadow: 0 2px 0 0 #bebebe;
+                    }
+                }
+            }
+        }
+    }
+}
+.body{
+    width: 100%;
+    height: 870px;
+    &-intro{
+        margin-left: $margin-left;
+        margin-top: 100px;
+        &_1{
+            @include montserrat(bold, 36px, uppercase, normal,normal);
+            color: #383838;
+        }
+        &_2{
+            margin-top: 50px;
+            width: 70px;
+            height: 2px;
+            background-color: #9a9a9a;
+        }
+    }
+    &-content{
+        margin-left: $margin-left;
+        margin-top: 60px;
+        display: flex;
+        &_1{
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+            &_text{
+                margin-top: 18px;
+                @include montserrat(normal, 20.4px, normal, 1.23, 0.2px);
+                color:#999797;
+                p{
+                    margin-top:10px;
+                    @include montserrat(normal, 16.3px, none, 1.53, 0.24px);
+                    color: #383838;
+                }
+            }    
+        }
+        &_2{
+            @extend .body-content_1;
+            &_text{
+                @extend .body-content_1_text;
+            }
+        }
+                &_2{
+            @extend .body-content_1;
+            &_text{
+                @extend .body-content_1_text;
+            }
+        }
+        &_3{
+            @extend .body-content_1;
+            &_text{
+                @extend .body-content_1_text;
+            }
+        }
+    }
+}
+.quote{
+    width: 100%;
+    height: 400px;
+    background-image: url('/IMG/Rectangle_4.png');
+    background-repeat: no-repeat;
+    flex-direction: column;
+    @include flex-center();
+    &-text{
+        flex-direction: column;
+        @include flex-center();
+        &_1{
+            @include montserrat(normal, 24px, none, 1.27, normal);
+            color:#f3f3f3;
+            margin-bottom: 20px;
+        }
+        &_2{
+            @include montserrat(bold, 24px, none, 1.27, normal);
+            p{
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+        }
+    }
+    &-circle{
+        @include flex-center();
+        margin-top: 100px;
+        &_1{
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 10px 0 0;
+            background-color: #f5f5f5;
+        }
+        &_2{
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 10px 0 0;
+            background-color: #b4aca5;
+        }
+        &_3{
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 10px 0 0;
+            background-color: #b4aca5 ;
+        }
+    }
+}
+.requiment{
+    width: 100%;
+    height: 650px;
+    &-intro{
+        text-align: center;
+        padding: 80px;
+        @include montserrat(bolder, 24px,uppercase , 1.27 , normal);
+        color: #585858;       
+    }
+    &-contact{
+        margin-left: $margin-left;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        &_us{
+            @include montserrat(normal, 24px, none, 1.04, 0.24px);
+            color: #555555;
+            margin-bottom: 24px;
+        }
+        &_email{
+            display: flex;
+            &_name {
+                width: 181px;
+                height: 50px;
+                border-radius: 5px;
+                margin-right: 19px;
+                background-color: #ededed;
+                input{
+                    width: 181px;
+                    height: 50px;
+                    opacity: 0.5;
+                    padding-left: 5px;
+                    outline: none;
+                    @include montserrat(300,14px,none,1.79, 0.14px);
+                    color: #383838;
+                    border: none;
+                    background-color: #ededed;
+                }
+            }
+            &_address{
+                @extend .requiment-contact_email_name ;
+            }
+        }
+        &_mess {
+            width:381px;
+            height: 129px;
+            margin-top: 19px;
+            border-radius: 5px;
+            background-color: #ededed;
+                input{
+                    width: 375px;
+                    height: 50px;
+                    opacity: 0.5;
+                    margin-left: 5px;
+                    @include montserrat(300, 14px, none, 1.79, 0.14px);
+                    color: #383838;
+                    outline: none;
+                    border:none;
+                    background-color: #ededed;
+            }
+        }
+        &_submit button{
+            width: 181px;
+            height: 50px;
+            margin-top: 19px;
+            border-radius: 5px;
+            background-color: #f7564b;
+            outline: none;
+            @include montserrat(normal, 16px, none, 1.56, 0.16px);
+            color: #ecf0f1;
+            &:hover{
+                background-color:#ecf0f1;
+                color: #383838;
+            }
+        }
+    }
+    .infor{
+        float: right;
+        margin-right: $margin-right;
+        text-align: right;
+        &-address{
+            @include montserrat(bold, 24px, uppercase, 1.04, 0.24px);
+            margin: 0 0 26px 0;
+            color: #555555;
+        }
+        &-address1{
+            @include montserrat(normal, 20px, uppercase, 1.1, normal);
+            color: #888888;
+        }
+        &-address2{
+            @include montserrat(normal, 20px, uppercase, 1.1, normal);
+            color: #888888;
+        }
+        &-phone{
+            @extend .infor-address;
+            margin-top: 26px;
+        }
+        &-phone1{
+            @extend .infor-address1;
+        }
+        &-email{
+            @extend .infor-phone;
+        }
+        &-email1{
+            @extend .infor-address1;
+        }
+    }
+}
+.footer{
+    background-color: #333333;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    &-left{
+        margin-left: $margin-left;
+        @include flex-center();
+        &-allright{
+            @include montserrat(300, 14px, uppercase, 1.1, normal);
+            color: white;
+        }
+    }
+    &-right{
+        margin-right: $margin-right;
+        @include flex-center();
+        &-designer{
+            @include montserrat(300, 14px, none, 1.1, normal);
+            color: white;
+            & span{
+                color:#f0718d;
+            }
+        }
+    }
+}

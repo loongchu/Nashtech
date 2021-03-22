@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/IMG/section_hero.png");
+  background-size: cover;
+}
+.header-nav {
+  padding-top: 93px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-icon {
+  margin-left: 111px;
+}
+.header-menu {
+  margin-right: 102px;
+}
+.header-menu ul li {
+  display: inline-block;
+}
+.header-menu a {
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  margin-left: 30px;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 111px;
+  margin-top: 150px;
+}
+.header-content_tech {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.98;
+  letter-spacing: normal;
+  color: #f2f2f2;
+}
+.header-content_build, .header-content_good {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #f2f2f2;
+}
+.header-content_good {
+  margin-top: 25px;
+}
+.header-content_good span {
+  font-weight: bold;
+}
+.header-content-email {
+  margin-top: 25px;
+  display: flex;
+}
+.header-content-email_text input {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.14px;
+  color: #f2f2f2;
+  color: #383838;
+  background-color: #ededed;
+  width: 270px;
+  height: 39px;
+  outline: none;
+  opacity: 0.5;
+  border-radius: 4px;
+  border: none;
+  padding-left: 10px;
+  box-shadow: 0 2px 0 0 #bebebe;
+}
+.header-content-email_button button {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 0.16px;
+  color: #f2f2f2;
+  background-color: #f7564b;
+  margin-left: 10px;
+  width: 200px;
+  height: 39px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 0 0 #d0493f;
+}
+.header-content-email_button button:hover {
+  background-color: #fff8dc;
+  color: black;
+  box-shadow: 0 2px 0 0 #bebebe;
+}
+
+.body {
+  width: 100%;
+  height: 870px;
+}
+.body-intro {
+  margin-left: 111px;
+  margin-top: 100px;
+}
+.body-intro_1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: #383838;
+}
+.body-intro_2 {
+  margin-top: 50px;
+  width: 70px;
+  height: 2px;
+  background-color: #9a9a9a;
+}
+.body-content {
+  margin-left: 111px;
+  margin-top: 60px;
+  display: flex;
+}
+.body-content_1, .body-content_3, .body-content_2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.body-content_1_text, .body-content_3_text, .body-content_2_text {
+  margin-top: 18px;
+  font-weight: normal;
+  text-transform: normal;
+  font-size: 20.4px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  color: #f2f2f2;
+  color: #999797;
+}
+.body-content_1_text p, .body-content_3_text p, .body-content_2_text p {
+  margin-top: 10px;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 16.3px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: 0.24px;
+  color: #f2f2f2;
+  color: #383838;
+}
+.quote {
+  width: 100%;
+  height: 400px;
+  background-image: url("/IMG/Rectangle_4.png");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-text {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-text_1 {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: #f3f3f3;
+  margin-bottom: 20px;
+}
+.quote-text_2 {
+  font-weight: bold;
+  text-transform: none;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #f2f2f2;
+}
+.quote-text_2 p {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.quote-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.quote-circle_1 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 0 0;
+  background-color: #f5f5f5;
+}
+.quote-circle_2 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 0 0;
+  background-color: #b4aca5;
+}
+.quote-circle_3 {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 0 0;
+  background-color: #b4aca5;
+}
+
+.requiment {
+  width: 100%;
+  height: 650px;
+}
+.requiment-intro {
+  text-align: center;
+  padding: 80px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: #585858;
+}
+.requiment-contact {
+  margin-left: 111px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+.requiment-contact_us {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: 0.24px;
+  color: #f2f2f2;
+  color: #555555;
+  margin-bottom: 24px;
+}
+.requiment-contact_email {
+  display: flex;
+}
+.requiment-contact_email_name, .requiment-contact_email_address {
+  width: 181px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 19px;
+  background-color: #ededed;
+}
+.requiment-contact_email_name input, .requiment-contact_email_address input {
+  width: 181px;
+  height: 50px;
+  opacity: 0.5;
+  padding-left: 5px;
+  outline: none;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.14px;
+  color: #f2f2f2;
+  color: #383838;
+  border: none;
+  background-color: #ededed;
+}
+.requiment-contact_mess {
+  width: 381px;
+  height: 129px;
+  margin-top: 19px;
+  border-radius: 5px;
+  background-color: #ededed;
+}
+.requiment-contact_mess input {
+  width: 375px;
+  height: 50px;
+  opacity: 0.5;
+  margin-left: 5px;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.14px;
+  color: #f2f2f2;
+  color: #383838;
+  outline: none;
+  border: none;
+  background-color: #ededed;
+}
+.requiment-contact_submit button {
+  width: 181px;
+  height: 50px;
+  margin-top: 19px;
+  border-radius: 5px;
+  background-color: #f7564b;
+  outline: none;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 0.16px;
+  color: #f2f2f2;
+  color: #ecf0f1;
+}
+.requiment-contact_submit button:hover {
+  background-color: #ecf0f1;
+  color: #383838;
+}
+.requiment .infor {
+  float: right;
+  margin-right: 102px;
+  text-align: right;
+}
+.requiment .infor-address, .requiment .infor-phone, .requiment .infor-email {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: 0.24px;
+  color: #f2f2f2;
+  margin: 0 0 26px 0;
+  color: #555555;
+}
+.requiment .infor-address1, .requiment .infor-email1, .requiment .infor-phone1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: #888888;
+}
+.requiment .infor-address2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: #888888;
+}
+.requiment .infor-phone, .requiment .infor-email {
+  margin-top: 26px;
+}
+.footer {
+  background-color: #333333;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left {
+  margin-left: 111px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-left-allright {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: white;
+}
+.footer-right {
+  margin-right: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-right-designer {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #f2f2f2;
+  color: white;
+}
+.footer-right-designer span {
+  color: #f0718d;
+}
+
+/*# sourceMappingURL=arkenea.css.map */
