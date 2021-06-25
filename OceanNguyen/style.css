@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: no-repeat center center;
+    background-image: url('img/bg-index.jpg');
+    background-size: cover;
+    position: relative;
+}
+.header .navbar{
+    margin: 0 20%;
+    padding:16px;
+    position: relative;
+}
+
+.navbar .navber-logo{
+    float: left;
+}
+.navbar .navbar-logo img{
+    width: 150px;
+
+}
+.navbar .navbar-menu{
+    float: right;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+ul{
+    list-style-type: none;
+    background-color: black;
+    margin-top: 10px;
+}
+ul li {
+    float: left;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: sans-serif ,tahoma,Arial,"Trebucket MS";
+    font-size: 12px;
+    font-weight: 800;
+
+}
+ul li a:hover{
+    color:rgba(255, 255, 255, 0.8)
+}
+.clear-fix{
+    clear: both;
+}
+.container{
+    position: relative;
+}
+.page-heading{
+    color:white;
+    font-size: 32px;
+    text-align: center;
+    padding:5.5em;
+}
+.page-heading p{
+    font-size: 80px;
+    line-height: 1.1;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.page-heading .sub-heading{
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.overlay{
+    background-color: #212529;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.search-bar{
+    background-color: #fff;
+    border: 1px solid gray;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.search-bar input{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 5px 0 5px 5px;
+    width:88%;
+}
+.search-bar button{
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border:none;
+}
+.search-bar button i{
+    color: #fff;
+}
+.container-content{
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 80px;
+}
+article{
+    text-align: center;
+    float: left;
+    margin-bottom: 30px;
+}
+article a{
+    text-decoration: none;
+    background-color: teal;
+}
+article a h2{
+    float: left;
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: #212529;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+article a h3{
+    float: left;
+    font-size: 30px;
+    font-weight: 300;
+    color: #343a40;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+article p {
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Lora', 'Times New Roman', serif;
+    margin-top: 10px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+.viewport button{
+    float: right;
+    background-color: #0085A1;
+    height: 53px;
+    width: 200px;
+    border-color: none;
+    box-shadow: none;
+    border: none;
+    transition-duration: 0.4s;
+}
+.viewport button:hover{
+    background-color: teal;
+}
+.viewport button .bth{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer .container-footer{
+    margin-top: 50px;
+    margin-bottom: 65px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.footer .container-footer .row ul {
+    display: inline-block;
+}
+.footer .container-footer .row ul li{
+    background-color: white;
+}
+.footer .container-footer .row ul li button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+.footer .container-footer .row ul li button:hover{
+    background-color: #0085A1;
+}
+.footer .container-footer .row ul li button i{
+    font-size: 30px;
+    color: white;
+}
+
+.footer .container-footer .copyright{
+    color: #6c757d!important;
+    line-height: 1.5;
+    font-family: 'Lora', 'Times New Roman', serif;
+    margin-top: 30px;
+}
+
+
+
+
+
+
